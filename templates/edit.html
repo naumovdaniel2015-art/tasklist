@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>редактирование задачи</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>редактирование задач</h1>
+        <form  method="post">
+            <input type="text" name="task" value="{{ task }}" required>
+            <button type="submit"> сохранить</button>
+        
+        <a href="{{ url_for('index') }}" class="back-button">назад</a>
+        </form>
+    </div>
+    
+</body>
+</html>

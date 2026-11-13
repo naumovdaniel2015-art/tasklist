@@ -1,0 +1,84 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #0d6ebd;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    width: 500px;
+    margin: 100px auto;
+    padding:30px ;
+    border-radius: 15px;
+    background: rgb(145, 255, 2);
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    padding: 10px;
+    color:rgb(231, 13, 13);
+    background: azure;
+    border-radius: 15px;
+    border: none;
+}
+input::placeholder{
+    color:rgb(255, 177, 9);
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0d6ebd;
+    color: aqua;
+    border: none;
+}
+ul{
+list-style: none;
+padding: 0;
+    
+}
+li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #edeeee;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.delete-button{
+    text-decoration: none;
+    padding: 10px;
+    background: #850a2f;
+    border-radius: 10px;
+}
+.delete-button:hover{
+    background: #cf0b46;
+}
+button:hover{
+    background: #70b5ee;
+}
+.edit-button{
+    text-decoration: none;
+    padding: 10px;
+    background: #52b410;
+    border-radius: 10px;
+}
+.edit-button:hover{
+    background: #60dd0d;
+}
+.back-button{
+    text-decoration: none;
+    padding: 10px;
+    background: #e91010;
+    border-radius: 10px;
+    color:white
+}
+.back-button:hover{
+    background: #ff0000;
+}
