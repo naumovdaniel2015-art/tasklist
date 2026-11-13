@@ -1,11 +1,14 @@
 from flask import Flask,render_template,request,redirect,url_for
+import os
+
+TASKS_FILE = os.getenv("TASKS_FILE", "tasks.txt")
 app=Flask(__name__)
 tasks =[]
 def save_tasks(tasks):
-    with open ("tasks.txt","w",encoding="utf-8")as file:
+    with open (TASKS_FILE,"w",encoding="utf-8")as file:
         file.write("\n".join(tasks) )
 def load_tasks():
-    with open ("tasks.txt","r",encoding="utf-8")as file:
+    with open (TASKS_FILE,"r",encoding="utf-8")as file:
         tasks=[l.strip() for l in file.readlines()]
         return tasks
 @app.route("/",methods=["GET","POST"])
